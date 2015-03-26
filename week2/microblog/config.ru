@@ -1,0 +1,3 @@
+require './Blog'
+
+run Blog

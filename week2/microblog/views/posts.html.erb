@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <% unless posts.empty? %>
+    <% posts.each do |post| %>
+      <h1>Post No<%= post.id %> from <%= post.date %></h1>
+      <p><%= post.text %></p>
+    <% end %>
+  <% else %>
+    <h1> No posts found. </h1>
+  <% end %>
+</body>
+</html>
